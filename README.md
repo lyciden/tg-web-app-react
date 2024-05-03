@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Plinko
+<div align="center">
+<img src="https://user-images.githubusercontent.com/35928107/190816186-5743b954-d6cc-4c7e-988a-5a01b91a0112.png" width="30%">
+<img src="https://user-images.githubusercontent.com/35928107/190816054-d52c48f0-0986-4f96-add4-9b0e497096bd.png" width="30%">
+<img src="https://user-images.githubusercontent.com/35928107/190816660-5a369da4-4353-4909-9126-7cded0b4a172.png" width="30%">
+<img src="https://user-images.githubusercontent.com/35928107/190814964-0141b02a-d741-460b-8ec2-89c2bac078e1.png" >
+<img src="https://user-images.githubusercontent.com/35928107/190815308-052d5240-edb6-45e3-8394-4e79bb253c60.png" width="49%" >
+<img src="https://user-images.githubusercontent.com/35928107/190815405-163c0aaa-953e-4187-99ca-0b9f82be5244.png" width="49%">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+</div>
+## What is this game? 
+> This game is a version of the game Plinko, here, you start with 100PPs (plinko points) and you can bet your points to earn more based on the multipliers in the bottom of game.
 
-## Available Scripts
 
-In the project directory, you can run:
+## How to play?
+> Just access the [link](https://www.plinko.kayooliveira.com), select your bet value and click on 'Apostar', or, if you don't want to lose your points, just click directly on 'Apostar' button and the game will put a new ball without value in game.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Stacks
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React
+- Typescript 
+- TailwindCSS (Styles)
+- Matter-JS (Physics engine)
+- Zustand (Manage the states)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Made with :two_hearts: by Kayo Oliveira
