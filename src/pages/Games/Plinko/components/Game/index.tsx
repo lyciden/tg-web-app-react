@@ -11,7 +11,6 @@ import {
   World
 } from 'matter-js'
 import { useCallback, useEffect, useState } from 'react'
-import { useAuthStore } from 'store/auth'
 import { useGameStore } from 'store/game'
 import { random } from 'utils/random'
 
@@ -27,7 +26,6 @@ import {
 
 export function Game() {
   // #region States
-  const incrementCurrentBalance = useAuthStore(state => state.incrementBalance)
   const engine = Engine.create()
   const [lines, setLines] = useState<LinesType>(16)
   const inGameBallsCount = useGameStore(state => state.gamesRunning)
@@ -239,7 +237,6 @@ export function Game() {
     ball.collisionFilter.group = 2
     World.remove(engine.world, ball)
     removeInGameBall()
-    const ballValue = ball.label.split('-')[1]
     const multiplierValue = +multiplier.label.split('-')[1] as MultiplierValues
 
     const multiplierSong = new Audio(getMultiplierSound(multiplierValue))
@@ -247,11 +244,6 @@ export function Game() {
     multiplierSong.volume = 0.2
     multiplierSong.play()
     setLastMultipliers(prev => [multiplierValue, prev[0], prev[1], prev[2]])
-
-    if (+ballValue <= 0) return
-
-    const newBalance = +ballValue * multiplierValue
-    await incrementCurrentBalance(newBalance)
   }
   async function onBodyCollision(event: IEventCollision<Engine>) {
     const pairs = event.pairs

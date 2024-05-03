@@ -1,5 +1,3 @@
-import { get, ref } from 'firebase/database'
-import { database } from 'lib/firebase'
 import { Profile } from 'pages/Profile'
 import { ArrowLeft, CircleDashed, Play } from 'phosphor-react'
 import { useEffect, useState } from 'react'
@@ -19,7 +17,6 @@ interface UserWithPosition extends User {
 
 export function ScoreBoardPage() {
   const [isLoading, setIsLoading] = useState<boolean>(true)
-  const dbRef = ref(database, 'wallet')
   const [scoreBoard, setScoreBoard] = useState<ScoreBoard[]>([])
   const [userProfile, setUserProfile] = useState<UserWithPosition | undefined>(
     undefined
@@ -28,12 +25,6 @@ export function ScoreBoardPage() {
   useEffect(() => {
     const getScoreBoardData = async () => {
       setIsLoading(true)
-      const snapshot = await get(dbRef)
-      const data = Object.values(snapshot.val()) as unknown as ScoreBoard[]
-      const sortedData = data
-        .sort((a, b) => b.currentBalance - a.currentBalance)
-        .slice(0, 10)
-      setScoreBoard(sortedData)
       setIsLoading(false)
     }
 
